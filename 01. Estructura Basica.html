@@ -4,10 +4,10 @@
 <!-- La etiqueta <html> sirve como contenedor total de la Pagina que estamos a punto de estructurar -->
 <html lang="en">
 
-<!-- La etiqueta <Head> es una de las dos partes de la estrctura de la pagina dentro de esta se almacenan todo los metadatos de la pagina, en otras palabras aca se localizan todos los elementos importantes de la web que no seran visibles pero son necesarios para su desarollo  -->
+<!-- La etiqueta <Head> es una de las dos partes de la estrctura de la pagina dentro de esta se almacenan todo los metadatos de la pagina, en otras palabras aca se localizan todos los elementos importantes de la web que no seran visibles pero son necesarios para su desarollo se hace uso de etiquetas como <meta> o <link> que dependiendo de los atributos y valores pueden tomar diferentes usos necesarios para la web (ABAJO ACALARACION)-->
 <head>
 
-    <!-- Con la siguiente etiqueta estamos estableciendo la codificacion de caracteres UTF-8 la cual nos dara soporte para una gran gamma de caracteres que podamos utilizar y no tengamos errores visuales -->
+    <!-- Con el siguiente metadato (especificamente con el atributo charset) estamos estableciendo la codificacion de caracteres UTF-8 la cual nos dara soporte para una gran gamma de caracteres que podamos utilizar y no tengamos errores visuales -->
     <meta charset="UTF-8">
 
     <!-- Este metadato nos permite especificar al navegador que el contenido de la web debe ser ajustado al tamaño de la ventana, de esta forma el navegador no forzara un zoom y todo se ajustara a menos que mas adelante especifiquemos otra cosa en los elementos -->
@@ -26,3 +26,67 @@
     
 </body>
 </html>
+
+<!-- 
+    ETIQUETAS META:
+    - Las etiquetas meta, también conocidas como "metadatos", son etiquetas HTML que se utilizan para proporcionar información adicional sobre un documento web. Estas etiquetas se colocan en la sección <head> del documento HTML y no se muestran directamente en la página, pero son fundamentales para la indexación, la búsqueda y la presentación de la página en los motores de búsqueda y otros agentes.
+
+    A rasgos generales, las etiquetas meta se pueden clasificar en varias categorías:
+
+        - Metadatos de autor: Proporcionan información sobre el autor del documento, como el nombre, la dirección de correo electrónico, la fecha de creación, etc.
+        Ejemplos: <meta name="author" content="Juan Pérez">, <meta name="copyright" content="2023 Juan Pérez">
+        
+        - Metadatos de descripción: Proporcionan una breve descripción del contenido del documento.
+        Ejemplos: <meta name="description" content="Esta es la descripción del sitio">, <meta name="abstract" content="Resumen del artículo">
+        
+        - Metadatos de keywords: Proporcionan palabras clave relevantes para el contenido del documento.
+        Ejemplos: <meta name="keywords" content="palabra1, palabra2, palabra3">
+        
+        - Metadatos de robots: Indican a los motores de búsqueda cómo deben tratar el documento.
+        Ejemplos: <meta name="robots" content="index, follow">, <meta name="robots" content="noindex, nofollow">
+        
+        - Metadatos de viewport: Controlan la escala y el ancho de la página en dispositivos móviles.
+        Ejemplos: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        - Metadatos de charset: Indican la codificación de caracteres utilizada en el documento.
+        Ejemplos: <meta charset="UTF-8">
+        
+        - Metadatos de refresh: Redirigen la página a otra URL después de un cierto tiempo.
+        Ejemplos: <meta http-equiv="refresh" content="30">
+-->
+
+<!--
+    ETIQUETAS LINK:
+
+    Las etiquetas <link> se utilizan para enlazar recursos externos a un documento HTML. Estas etiquetas se colocan en la sección <head> del documento HTML y se utilizan para:
+
+        - Enlazar hojas de estilo CSS: Permiten agregar estilos CSS a un documento HTML.
+        Ejemplo: <link rel="stylesheet" type="text/css" href="estilos.css">
+        
+        - Enlazar iconos y favicons: Permiten agregar iconos y favicons a un documento HTML.
+        Ejemplo: <link rel="icon" type="image/png" href="favicon.png">
+        
+        - Enlazar scripts JavaScript: Permiten agregar scripts JavaScript a un documento HTML.
+        Ejemplo: <link rel="script" type="text/javascript" href="script.js">
+        
+        - Enlazar recursos externos: Permiten enlazar recursos externos, como imágenes, archivos de audio o video, a un documento HTML.
+        Ejemplo: <link rel="image" type="image/jpeg" href="imagen.jpg">
+
+    Las etiquetas <link> tienen varios atributos importantes:
+
+        - rel: Especifica la relación entre el documento HTML y el recurso externo. Puede ser "stylesheet" para hojas de estilo CSS, "icon" para iconos y favicons, "script" para scripts JavaScript, etc.
+        
+        - type: Especifica el tipo de recurso externo. Puede ser "text/css" para hojas de estilo CSS, "image/png" para iconos y favicons, "text/javascript" para scripts JavaScript, etc.
+        
+        - href: Especifica la URL del recurso externo.
+    
+    Es importante tener en cuenta que las etiquetas <link> se utilizan para enlazar recursos externos, mientras que las etiquetas <script> y <style> se utilizan para agregar scripts yilos directamente en el documento HTML.
+
+    Aquí hay algunos ejemplos más de etiquetas <link>:
+
+        - <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">: Enlaza un archivo RSS a un documento HTML.
+        
+        - <link rel="canonical" href="https://www.ejemplo.com/">: Especifica la URL canónica de un documento HTML.
+        
+        - <link rel="dns-prefetch" href="https://www.ejemplo.com/">: Prefecha la resolución de DNS para una URL externa.
+-->
