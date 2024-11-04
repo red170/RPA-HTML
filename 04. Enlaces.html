@@ -1,0 +1,65 @@
+<!-- 
+Los enlaces en HTML se crean utilizando la etiqueta <a> (de "anchor" en inglés). La etiqueta <a> se utiliza para enlazar a otra página web, una sección dentro de la misma página, o incluso un correo electrónico.
+
+La estructura básica de un enlace es la siguiente:
+*<a href="ruta/al/enlace">Texto del enlace</a>
+
+Donde:
+- href es el atributo que especifica la ruta del enlace (puede ser una URL absoluta o relativa).
+- Texto del enlace es el texto que se mostrará en la página web y que será clickeable.  
+-->
+
+<!-- 
+En HTML, las rutas se utilizan para dirigir a un navegador web a una ubicación específica dentro de un sitio web o a una página web externa. Las etiquetas de enlaces (<a>) son un ejemplo común de cómo se utilizan las rutas en HTML.
+
+Existen dos tipos de rutas:
+
+* Rutas absolutas: 
+Inician con el protocolo (http:// o https://) y la dirección del sitio web, seguida de la ruta específica. Ejemplo: <a href="https://www.ejemplo.com/ruta/al/archivo.html">Enlace</a>
+
+* Rutas relativas: 
+Se refieren a una ubicación dentro del sitio web actual, sin especificar el protocolo ni la dirección del sitio web. Ejemplo: <a href="ruta/al/archivo.html">Enlace</a>
+
+En el caso de las rutas relativas, el navegador web asume que la ruta se encuentra dentro del sitio web actual. Por ejemplo, si estamos en la página https://www.ejemplo.com/pagina1.html y queremos enlazar a pagina2.html que se encuentra en la misma carpeta, podemos usar una ruta relativa como <a href="pagina2.html">Enlace</a>.
+
+También existen rutas relativas que permiten navegar entre carpetas:
+
+*(./:) 
+Se refiere a la carpeta actual. Ejemplo: <a href="./archivo.html">Enlace</a>
+
+*(../:) 
+Se refiere a la carpeta padre. Ejemplo: <a href="../otra-carpeta/archivo.html">Enlace</a> */: Se refiere a la carpeta raíz del sitio web. Ejemplo: <a href "/ruta/al/archivo.html">Enlace</a>`
+
+Es importante tener en cuenta que las rutas pueden ser utilizadas no solo en etiquetas de enlaces (<a>), sino también en otras etiquetas como <img>, <script>, <link>, etc.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Enlace a una página web externa: <a href="https://www.google.com">Ir a Google</a> <br>
+        <!-- Aca lo relevanate es que se coloca una web tales cuales las conocemos del internet-->
+    
+    Enlace a una página web interna: <a href="pagina2">Ir a la página 2</a> <br>
+        <!-- Aca se deben tener conocimeintos de como redireccionar las paginas html para poder dar uso (explicacion al inicio) -->
+    
+    Enlace a una sección dentro de la misma página: <a href="#seccion1">Ir a la sección 1</a> <br>
+        <!-- En este caso sirven para manejarse dentro de secciones especificas de la misma pagina usando la tecla tabulador -->
+    
+    Enlace a un correo electrónico: <a href="mailto:correo@example.com">Enviar correo</a> <br>
+        <!-- En este caso nos redireccionara a un servicio de mensajeria por correo electronico para poder  enviar un mensaje al correo indicado -->
+    
+    Enlace para descargar un archivo: <a href="archivo.pdf" download>Descargar archivo</a> <br>
+        <!-- Estas descargas de archivos se hacen con los archivos que nosotrosa mismos tenemos dentro de las carpetas de la pagina web -->
+
+    Enlace para abrir una pagina en una nueva pestaña: <a href="https://www.google.com" target="_blank">Ir a Google</a>
+
+    Enlace para abrir una pagina en ula misma pestaña: <a href="pagina2.html" target="_self">Ir a la página 2</a>
+    
+</body>
+</html>
