@@ -1,0 +1,70 @@
+<!-- Tablas -->
+ <!-- Las tablas se utilizan para organizar la información en filas y columnas. Para crear una tabla, se utilizan las etiquetas <table> para definir la tabla en sí misma, <tr> para definir una fila y <td> para definir una celda. Las tablas también pueden tener encabezados de fila y columna, que se definen con las etiquetas <th>, Las tablas se pueden personalizar con atributos como border (para especificar el ancho del borde de la tabla) y cellspacing (para especificar el espacio entre las celdas)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Tablas</h1>
+    <table>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td>Celda 4</td>
+            <td>Celda 5</td>
+            <td>Celda 6</td>
+        </tr>
+    </table>
+
+    <h1>Uniones de Celda con Colspan</h1>
+    <!-- Las uniones de celdas con Colspan sirven para combinar celdas de forma Horizontal (->) se debe especificar con numeros el totla de tamaño segun las celdas de espacio que ocupara -->
+    <table>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+        <tr>
+            <td colspan="2">Celda 4</td>
+            <td>Celda 5</td>
+        </tr>
+
+        <h1>Uniones de Celda con Rowspan</h1>
+        <!-- Las uniones de celdas con Rowspan sirven para combinar celdas de forma Vertical (↓) se debe especificar con números el total de tamaño según las celdas de espacio que ocupará -->
+        <table>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+            <tr>
+                <td>Celda 1</td>
+                <td rowspan="2">Celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+            </tr>
+        </table>
+    
+</body>
+</html>
