@@ -1,0 +1,54 @@
+<!-- Contenido Emebido -->
+<!-- 
+
+El contenido embebido en HTML se refiere a la inclusión de recursos externos dentro de una página web. Estos recursos pueden ser imágenes, videos, audio, documentos, entre otros. A continuación, se presentan algunos ejemplos comunes de contenido embebido en HTML:
+
+1. **Imágenes**: Se utilizan las etiquetas `<img>` para insertar imágenes.
+
+2. **Videos**: Se utilizan las etiquetas `<video>` para insertar videos.
+
+3. **Audio**: Se utilizan las etiquetas `<audio>` para insertar archivos de audio.
+
+4. **Documentos**: Se pueden insertar documentos como PDFs utilizando la etiqueta `<embed>` o `<iframe>`.
+
+5. **Contenido interactivo**: Se pueden insertar elementos interactivos como mapas de Google utilizando la etiqueta `<iframe>`
+
+Estos son solo algunos ejemplos de cómo se puede embebir contenido en una página HTML para enriquecer la experiencia del usuario.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Imagenes</h1>
+
+        <img src="Resources/img.png" alt="imagen">
+
+    <h1>Videos</h1>
+
+        <video>
+            <source src="Resources/video.mp4" type="video/mp4">
+        </video>
+
+    <h1>Audio</h1>
+
+        <audio controls>
+            <source src="Resources/au.flac" type="audio/flac">
+        </audio>
+
+    <h1>Documentos</h1>
+
+        <embed src="Resources/pdf.pdf" type="application/pdf" width="600" height="400">
+
+    <h1>Contenido Interactivo</h1>
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.292292073073!2d-99.1332086851086!3d19.432607786892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9e7f3e3e3e1%3A0x9e6b4b3b4b4b4b4!2sPalacio%20de%20Bellas%20Artes!5e0!3m2!1ses-419!2smx!4v1623686820004!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+</body>
+</html>
