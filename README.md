@@ -14,21 +14,29 @@ Este repositorio está licenciado bajo la Licencia Creative Commons Attribution 
 ## Contenidos
 
 **1. Introducción**
+
 **2. Estructura Básica de HTML**
+
 **3. Texto y Estilos**
+
 **4. Enlaces**
+
 **5. Imágenes**
+
 **6. Listas**
+
 **7. Tablas**
    - Tablas Básicas
    - Uniones de Celda con Colspan
    - Uniones de Celda con Rowspan
+
 **8. Contenido Embebido**
    - Imágenes
    - Videos
    - Audio
    - Documentos
    - Contenido Interactivo
+   
 **9. Formularios**
    - Elementos de Formulario
    - Tipos de Inputs
